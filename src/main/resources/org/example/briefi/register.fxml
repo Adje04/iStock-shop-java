@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.briefi.controllers.AuthController">
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="220.0" style="-fx-background-color: #3185FC;">
+        <Label alignment="CENTER" text="IStock" textFill="WHITE">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Label>
+        <Label text="Logiciel de gestion de stock et de" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label text="vente de produits divers." textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label text="Propriété de IStock" textFill="#f8f6f6">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Label>
+        <Label text="Copyrigth 2024 - version 1.0" textFill="#f6f4f4">
+            <font>
+                <Font size="10.0"/>
+            </font>
+        </Label>
+    </VBox>
+    <Label layoutX="257.0" layoutY="80.0" text="Création de compte" AnchorPane.leftAnchor="260.0"
+           AnchorPane.topAnchor="60.0">
+        <font>
+            <Font name="System Bold" size="25.0"/>
+        </font>
+    </Label>
+    <Label layoutX="264.0" layoutY="96.0" text="Renseignez vos paramètres de connexion pour vous"
+           AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="100.0"/>
+    <Label layoutX="264.0" layoutY="117.0" text="creéer un nouveau compte." AnchorPane.leftAnchor="260.0"/>
+    <Label layoutX="260.0" layoutY="156.0" text="Nom d'utilisateur" AnchorPane.topAnchor="156.0"/>
+    <PasswordField fx:id="passwordPasswordField" layoutX="260.0" layoutY="227.0" prefHeight="25.0" prefWidth="284.0"
+                   promptText="Saisir le mot de passe ici" AnchorPane.leftAnchor="260.0"/>
+    <Label layoutX="260.0" layoutY="210.0" text="Mot de passe"/>
+    <TextField fx:id="usernameTextField" layoutX="260.0" layoutY="174.0" prefHeight="25.0" prefWidth="284.0"
+               promptText="Saisir le nom d'utilisateur de passe ici" AnchorPane.leftAnchor="260.0"/>
+    <Button layoutX="260.0" layoutY="276.0" mnemonicParsing="false" onAction="#onSubmitRegister" prefHeight="32.0"
+            prefWidth="284.0" style="-fx-background-color: #3185FC;" text="S'inscrire" textFill="WHITE"/>
+    <Label layoutX="258.0" layoutY="323.0" text="Déja menbre ?" AnchorPane.leftAnchor="260.0"/>
+    <Hyperlink layoutX="347.0" layoutY="320.0" onAction="#onSignIn" text="Connectez vous" underline="true"/>
+</AnchorPane>

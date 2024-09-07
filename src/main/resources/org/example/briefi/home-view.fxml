@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.briefi.controllers.HomeViewController">
+   <children>
+      <Button layoutX="15.0" layoutY="24.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #F9E2E4;" textFill="#f9e2e4" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="604.6666666666666" AnchorPane.topAnchor="24.0" />
+      <Text layoutX="44.0" layoutY="53.0" text="Plus de détails" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="53.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Label layoutX="44.0" layoutY="28.0" text="Liste des produits" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="25.333333333333332">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Text fx:id="productsCountText" fill="#e84855" layoutX="20.0" layoutY="57.0" text="2" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="211.0" layoutY="24.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #D7E5D5;" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="24.0" />
+      <Text layoutX="240.0" layoutY="63.0" text="Plus de détails">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Label layoutX="240.0" layoutY="25.0" text="Liste des catégories">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fx:id="categoriesCountText" fill="#45ac05" layoutX="216.0" layoutY="56.0" text="2">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="405.0" layoutY="24.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #E6D8D0;" AnchorPane.leftAnchor="405.0" AnchorPane.topAnchor="24.0" />
+      <Text layoutX="434.0" layoutY="63.0" text="Plus de détails">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Label layoutX="434.0" layoutY="23.0" text="Liste des ventes">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="24.0" text="0" textFill="#e88a0c">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="603.0" layoutY="24.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #E6D0E1;" AnchorPane.topAnchor="24.0" />
+      <Text layoutX="632.0" layoutY="63.0" text="Plus de détails">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Label layoutX="632.0" layoutY="25.0" text="Liste des utilisateurs" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fx:id="usersCountText" fill="#c80dd1" layoutX="608.0" layoutY="58.0" text="1">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="19.0" layoutY="104.0" prefHeight="215.0" prefWidth="763.0">
+         <children>
+            <Label fx:id="chartCaptionLabel" text="Quelques statistiques">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <AreaChart fx:id="purchasingAreaChart" layoutY="25.0" prefHeight="184.0" prefWidth="745.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+      <PieChart fx:id="categoriesPieChart" layoutX="461.0" layoutY="374.0" prefHeight="180.0" prefWidth="280.0" title="Etat de caisse" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="366.0" />
+      <PieChart fx:id="bankPieChart" layoutX="46.0" layoutY="366.0" prefHeight="180.0" prefWidth="280.0" title="Etat de stock" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="366.0" />
+   </children>
+</AnchorPane>
